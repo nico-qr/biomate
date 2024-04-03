@@ -1,0 +1,300 @@
+(* Content-type: application/vnd.wolfram.mathematica *)
+
+(*** Wolfram Notebook File ***)
+(* http://www.wolfram.com/nb *)
+
+(* CreatedBy='Mathematica 14.0' *)
+
+(*CacheID: 234*)
+(* Internal cache information:
+NotebookFileLineBreakTest
+NotebookFileLineBreakTest
+NotebookDataPosition[       158,          7]
+NotebookDataLength[     10270,        290]
+NotebookOptionsPosition[      7529,        238]
+NotebookOutlinePosition[      7930,        254]
+CellTagsIndexPosition[      7887,        251]
+WindowFrame->Normal*)
+
+(* Beginning of Notebook Content *)
+Notebook[{
+
+Cell[CellGroupData[{
+Cell["Examen parcial 2", "Title",
+ CellChangeTimes->{{3.921099098547112*^9, 
+  3.9210991078209047`*^9}},ExpressionUUID->"aca4ae4e-9dc5-457d-906e-\
+c8dab2c8cfa2"],
+
+Cell["\<\
+Biolog\[IAcute]a  matem\[AAcute]tica, 2024-2. 
+Facultad de Ciencias, UNAM.\
+\>", "Subtitle",
+ CellChangeTimes->{{3.921099120562232*^9, 3.9210991902903843`*^9}, {
+  3.921099590527639*^9, 
+  3.921099600769106*^9}},ExpressionUUID->"02279763-b637-41a0-a350-\
+899c1a79f8ff"],
+
+Cell[TextData[{
+ "- Ren\[EAcute] Nicol\[AAcute]s ",
+ StyleBox["Quijada Romero\n- ",
+  FontWeight->"Bold"],
+ "Ren\[EAcute] Alejandro ",
+ StyleBox["L\[OAcute]pez Borraz",
+  FontWeight->"Bold"]
+}], "Text",
+ CellChangeTimes->{{3.921099192938292*^9, 
+  3.921099217932479*^9}},ExpressionUUID->"cef01457-cf77-48fa-bf28-\
+7e08ef54502b"],
+
+Cell[CellGroupData[{
+
+Cell["1. Din\[AAcute]mica depredador presa", "Section",
+ CellChangeTimes->{{3.921099236792738*^9, 
+  3.921099274900893*^9}},ExpressionUUID->"3f896bbd-fd2c-4fb1-881c-\
+a684c3a20870"],
+
+Cell[TextData[{
+ "La din\[AAcute]mica entre un depredador y una presa puede modelarse de \
+manera m\[AAcute]s realista mediante el sistema de ecuaciones diferenciales: \
+\n\n(1)     ",
+ Cell[BoxData[
+  FormBox[
+   RowBox[{
+    FractionBox["dN", "dt"], "="}], TraditionalForm]],
+  FormatType->TraditionalForm,ExpressionUUID->
+  "54dbb00c-b307-4d62-b26a-7241dc8f9754"],
+ " N[r(1- ",
+ Cell[BoxData[
+  FormBox[
+   FractionBox[
+    RowBox[{"N", " "}], "K"], TraditionalForm]],
+  FormatType->TraditionalForm,ExpressionUUID->
+  "9f8339cd-f16a-4815-bad6-ee6c9a7803e3"],
+ ") -  ",
+ Cell[BoxData[
+  FormBox[
+   FractionBox["cP", 
+    RowBox[{"N", "+", "D"}]], TraditionalForm]],
+  FormatType->TraditionalForm,ExpressionUUID->
+  "0d84ec92-cc73-40f7-a179-9eb0da7f5f4c"],
+ "]\n(2)     ",
+ Cell[BoxData[
+  FormBox[
+   RowBox[{
+    FractionBox["dP", "dt"], "=", 
+    RowBox[{"P", "[", 
+     RowBox[{"s", "(", 
+      RowBox[{"1", "-", 
+       FractionBox["hP", "N"]}], ")"}], "]"}]}], TraditionalForm]],
+  FormatType->TraditionalForm,ExpressionUUID->
+  "5ce89b29-31e2-4453-b743-ce54d9bfc615"]
+}], "Text",
+ CellChangeTimes->{{3.9210992784081707`*^9, 3.9210992934596767`*^9}, 
+   3.921099382957767*^9, {3.921099662595209*^9, 3.92109966396655*^9}, {
+   3.921099699850725*^9, 
+   3.9211000717998447`*^9}},ExpressionUUID->"c351c6a8-9876-4167-8e61-\
+9668af0df079"],
+
+Cell[CellGroupData[{
+
+Cell["a) An\[AAcute]lisis de las ecuaciones y sus t\[EAcute]rminos", \
+"Subsection",
+ CellChangeTimes->{{3.9211000532475433`*^9, 3.921100060589799*^9}, {
+  3.921100127947426*^9, 
+  3.921100210244223*^9}},ExpressionUUID->"a55f0488-24cf-4366-bef6-\
+c8383c2984e7"],
+
+Cell["\<\
+En esta subsecci\[OAcute]n analizamos a la ecuaci\[OAcute]n, los \
+t\[EAcute]rminos y las constantes\
+\>", "Text",
+ CellChangeTimes->{{3.92110023937432*^9, 
+  3.921100256947034*^9}},ExpressionUUID->"e1920e99-a387-41f8-a7f1-\
+5bea192644cb"],
+
+Cell["\<\
+a.1) \[DownQuestion]Qu\[EAcute] ecuaci\[OAcute]n representa al depredador y \
+cu\[AAcute]l a la presa? \
+\>", "Subsubsection",
+ CellChangeTimes->{{3.921100213755993*^9, 
+  3.921100271286911*^9}},ExpressionUUID->"f06abdcb-8dfe-4d67-8626-\
+edff2eb1bf9f"],
+
+Cell["a.2) \[DownQuestion]Qu\[EAcute] representa cada t\[EAcute]rmino de las \
+ecuaciones?", "Subsubsection",
+ CellChangeTimes->{{3.921100275842766*^9, 
+  3.921100283062483*^9}},ExpressionUUID->"f57a8bb1-c5c3-4e1b-8505-\
+b48c987cc511"],
+
+Cell["\<\
+a.3) \[DownQuestion]Cu\[AAcute]l es el significado de las constantes r, K, c, \
+D, s y h?\
+\>", "Subsubsection",
+ CellChangeTimes->{{3.921100286452758*^9, 
+  3.9211002992804747`*^9}},ExpressionUUID->"37c40613-c4b2-46c2-8616-\
+cc82febff292"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell["b) Casos especiales del modelo", "Subsection",
+ CellChangeTimes->{{3.921100307748272*^9, 
+  3.921100320085442*^9}},ExpressionUUID->"92d46f15-1fed-4fe6-894b-\
+8a473703b5ec"],
+
+Cell["b.1) Comportamiento del modelo en ausencia de presas", "Subsubsection",
+ CellChangeTimes->{{3.921100325983417*^9, 
+  3.9211003350762043`*^9}},ExpressionUUID->"7478d14e-81dc-46f8-a858-\
+8196b873c6a6"],
+
+Cell["b.2) Comportamiento del modelo en ausencia de depredadores", \
+"Subsubsection",
+ CellChangeTimes->{{3.921100337627694*^9, 
+  3.921100347505494*^9}},ExpressionUUID->"f21efdfd-0c56-4288-849b-\
+574c6e47b504"],
+
+Cell["b.3) Realismo de estos comportamientos", "Subsubsection",
+ CellChangeTimes->{{3.921100356327072*^9, 
+  3.921100366257598*^9}},ExpressionUUID->"2b6f1051-efe6-4c79-a02b-\
+072299844f80"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell["c) Expresi\[OAcute]n del sistema de manera adimensional. ", "Subsection",
+ CellChangeTimes->{{3.921100372648491*^9, 
+  3.92110039127465*^9}},ExpressionUUID->"ed1132bc-0518-4d38-9a42-\
+eb99a79f2bcc"],
+
+Cell["\<\
+En esta secci\[OAcute]n derivamos la expresi\[OAcute]n del sistema de manera \
+adimensional e indicamos c\[OAcute]mo se escriben las nuevas constantes en \
+funci\[OAcute]n de las constantes originales\
+\>", "Text",
+ CellChangeTimes->{{3.921100395466659*^9, 
+  3.9211004160005407`*^9}},ExpressionUUID->"7a3d66f1-c74e-4ff2-9c5b-\
+4a904a06b935"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell["d) Soluciones de equilibrio", "Subsection",
+ CellChangeTimes->{{3.921100505985608*^9, 
+  3.9211005117761917`*^9}},ExpressionUUID->"2177c49f-c35b-45f3-a4b5-\
+472740bac441"],
+
+Cell["\<\
+Encontramos las soluciones de equilibrio del sistema no dimensional e \
+indicamos cu\[AAcute]les tiene sentido biol\[OAcute]gico. Tambi\[EAcute]n su \
+interpretaci\[OAcute]n\
+\>", "Text",
+ CellChangeTimes->{{3.921100514596649*^9, 
+  3.9211005324227943`*^9}},ExpressionUUID->"43c53c2f-f226-4832-b04a-\
+412c4c6f1687"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell["e) Comportamiento l\[IAcute]mite", "Subsection",
+ CellChangeTimes->{{3.921100536648178*^9, 
+  3.921100545822341*^9}},ExpressionUUID->"4315e10d-55c8-4e36-b57e-\
+2d7c7eb21238"],
+
+Cell["\<\
+A continuaci\[OAcute]n analizamos qu\[EAcute] ocurre con los depredadores \
+despu\[EAcute]s de mucho tiempo si al inicio hay al menos algunos presentes\
+\>", "Text",
+ CellChangeTimes->{{3.921100547230994*^9, 
+  3.921100563787813*^9}},ExpressionUUID->"903a4efc-639c-4fa5-877b-\
+d4812721af65"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell["f) Convivencia estable", "Subsection",
+ CellChangeTimes->{{3.921100597563897*^9, 
+  3.9211006072809896`*^9}},ExpressionUUID->"9241abe3-9515-4367-8548-\
+5138b5f38d6f"],
+
+Cell[TextData[{
+ "Determinamos cu\[AAcute]ndo la poblaci\[OAcute]n tiende a una convivencia \
+estable despu\[EAcute]s de mucho tiempo. GRaficamos la regi\[OAcute]n en el \
+espacio de par\[AAcute]metros ",
+ StyleBox["abd",
+  FontSlant->"Italic"],
+ " en la que hay estabilidad."
+}], "Text",
+ CellChangeTimes->{{3.921100608652214*^9, 
+  3.921100633725337*^9}},ExpressionUUID->"b1f6d71b-268a-4478-832c-\
+ec17a458628d"]
+}, Open  ]],
+
+Cell["g) Convivencia inestable ", "Subsection",
+ CellChangeTimes->{{3.921100642208527*^9, 
+  3.921100659763598*^9}},ExpressionUUID->"404a3e08-6a33-4d46-8aa9-\
+f7669a5513c2"]
+}, Open  ]]
+}, Open  ]]
+},
+WindowSize->{1380, 765},
+WindowMargins->{{-2.25, Automatic}, {Automatic, -22.5}},
+FrontEndVersion->"14.0 for Linux x86 (64-bit) (December 12, 2023)",
+StyleDefinitions->"Default.nb",
+ExpressionUUID->"20f3951e-e7c0-4629-b8a3-6c403674812a"
+]
+(* End of Notebook Content *)
+
+(* Internal cache information *)
+(*CellTagsOutline
+CellTagsIndex->{}
+*)
+(*CellTagsIndex
+CellTagsIndex->{}
+*)
+(*NotebookFileOutline
+Notebook[{
+Cell[CellGroupData[{
+Cell[580, 22, 161, 3, 98, "Title",ExpressionUUID->"aca4ae4e-9dc5-457d-906e-c8dab2c8cfa2"],
+Cell[744, 27, 279, 7, 85, "Subtitle",ExpressionUUID->"02279763-b637-41a0-a350-899c1a79f8ff"],
+Cell[1026, 36, 328, 10, 58, "Text",ExpressionUUID->"cef01457-cf77-48fa-bf28-7e08ef54502b"],
+Cell[CellGroupData[{
+Cell[1379, 50, 181, 3, 67, "Section",ExpressionUUID->"3f896bbd-fd2c-4fb1-881c-a684c3a20870"],
+Cell[1563, 55, 1342, 40, 115, "Text",ExpressionUUID->"c351c6a8-9876-4167-8e61-9668af0df079"],
+Cell[CellGroupData[{
+Cell[2930, 99, 261, 5, 54, "Subsection",ExpressionUUID->"a55f0488-24cf-4366-bef6-c8383c2984e7"],
+Cell[3194, 106, 249, 6, 35, "Text",ExpressionUUID->"e1920e99-a387-41f8-a7f1-5bea192644cb"],
+Cell[3446, 114, 262, 6, 45, "Subsubsection",ExpressionUUID->"f06abdcb-8dfe-4d67-8626-edff2eb1bf9f"],
+Cell[3711, 122, 235, 4, 37, "Subsubsection",ExpressionUUID->"f57a8bb1-c5c3-4e1b-8505-b48c987cc511"],
+Cell[3949, 128, 250, 6, 37, "Subsubsection",ExpressionUUID->"37c40613-c4b2-46c2-8616-cc82febff292"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[4236, 139, 178, 3, 54, "Subsection",ExpressionUUID->"92d46f15-1fed-4fe6-894b-8a473703b5ec"],
+Cell[4417, 144, 205, 3, 45, "Subsubsection",ExpressionUUID->"7478d14e-81dc-46f8-a858-8196b873c6a6"],
+Cell[4625, 149, 211, 4, 37, "Subsubsection",ExpressionUUID->"f21efdfd-0c56-4288-849b-574c6e47b504"],
+Cell[4839, 155, 189, 3, 37, "Subsubsection",ExpressionUUID->"2b6f1051-efe6-4c79-a02b-072299844f80"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[5065, 163, 204, 3, 54, "Subsection",ExpressionUUID->"ed1132bc-0518-4d38-9a42-eb99a79f2bcc"],
+Cell[5272, 168, 352, 7, 35, "Text",ExpressionUUID->"7a3d66f1-c74e-4ff2-9c5b-4a904a06b935"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[5661, 180, 177, 3, 54, "Subsection",ExpressionUUID->"2177c49f-c35b-45f3-a4b5-472740bac441"],
+Cell[5841, 185, 325, 7, 35, "Text",ExpressionUUID->"43c53c2f-f226-4832-b04a-412c4c6f1687"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[6203, 197, 180, 3, 54, "Subsection",ExpressionUUID->"4315e10d-55c8-4e36-b57e-2d7c7eb21238"],
+Cell[6386, 202, 301, 6, 35, "Text",ExpressionUUID->"903a4efc-639c-4fa5-877b-d4812721af65"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[6724, 213, 172, 3, 54, "Subsection",ExpressionUUID->"9241abe3-9515-4367-8548-5138b5f38d6f"],
+Cell[6899, 218, 414, 10, 35, "Text",ExpressionUUID->"b1f6d71b-268a-4478-832c-ec17a458628d"]
+}, Open  ]],
+Cell[7328, 231, 173, 3, 54, "Subsection",ExpressionUUID->"404a3e08-6a33-4d46-8aa9-f7669a5513c2"]
+}, Open  ]]
+}, Open  ]]
+}
+]
+*)
+
+(* End of internal cache information *)
+
